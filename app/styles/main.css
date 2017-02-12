@@ -52,11 +52,12 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
+background-color: inherit;
 }
 .jumbotron .btn {
   padding: .75rem 1.5rem;
   font-size: 1.5rem;
+  border-radius: 5px 5px 5px 5px;
 }
 
 /* Supporting marketing content */
@@ -83,5 +84,51 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+      
   }
+}
+
+header {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+
+@media (min-width: 600px) {
+
+header { padding-bottom: 50%; }
+
+}
+
+@media (min-width: 700px) {
+
+header { padding-bottom: 45%; }
+
+}
+
+/*custom adds */
+
+.bg-faded {
+    background-color: inherit;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: #f7f7f9;
+}
+navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+    color: #ec971f;
+}
+
+header img {
+ margin-top: -50px;
+  width: auto;
+  height: 720px;
+  max-width: 1280px;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+    z-index: -1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
